@@ -1,1 +1,125 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    width: 400px;
+    height: 80vh;
+    background-color: rgb(6, 100, 121);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 10px 10px 10px black;
+}
+
+.upper-data {
+    position: relative;
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.lower-data {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-data img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.weather-data {
+    position: relative;
+    z-index: 1;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.location {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.temperature {
+    text-align: center;
+    font-size: 4em;
+    font-weight: 900;
+}
+
+.more-info-label {
+    color: white;
+}
+
+.more-info-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 1em;
+}
+
+.info-block {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.info-block-label {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.info-block-label i {
+    font-size: 1.5em;
+}
+
+.info-block-label span {
+    font-size: 0.8em;
+}
+
+.info-block-value {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
